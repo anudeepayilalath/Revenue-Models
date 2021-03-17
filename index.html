@@ -27,10 +27,7 @@
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            
-
-           
-        }
+          }
 
         
 
@@ -38,10 +35,6 @@
           width:50%;
           display: flex;
           justify-content: flex-start;
-         
-          
-          
-            
         }
 
         #headerdiv{
@@ -62,6 +55,11 @@
 
         h3{
             font-size: 20px;
+        }
+
+        h3 span{
+          font-weight: 400;
+          font-size:16px;
         }
 
         #descdiv{
@@ -97,12 +95,12 @@
 
     <div id="maindiv">
       <div id="headerdiv">
-          <div>
-          <h3>Revenue Model Q4 2020 (N=690)</h3>
-          </div>
+          
+          <h3>Revenue Model <br><span>Q1 2020 (N=690)</span></h3>
+          
           <img src="./platformable-logo-blue.png" width="250px">
       </div>
-      <div id="chartdiv"><canvas id="myChart" height="450" ></canvas></div>
+      <div id="chartdiv"><canvas id="myChart" height="550" ></canvas></div>
       <div id="descdiv"><p id="p"><strong>Methodology:</strong>Platformable tracks all banks globally and tallies those that have established an open API platform. We then review how many API products are made available by each bank and tally them according to category,and  measure other API characteristics such as standards and specifications used, developer experience strategies employed, and business model/monetisation approaches. We review each bank at least once every three months.</p></div>
   </div>
    
@@ -196,7 +194,7 @@
                 gridLines: {
                 color: "rgba(0, 0, 0, 0)",
             },
-                barThickness : 16,
+                barThickness : 32,
                 ticks: {
                   
                   fontSize:16,
